@@ -63,6 +63,7 @@ body{
 }
 .header{
     border-bottom: 1px solid #ECECEC;
+    
 }
 .logo {
     text-decoration: none;
@@ -83,7 +84,7 @@ body{
 .list{
     list-style: none; }
    
-.item{
+.link{
     text-decoration: none;
 }
 .header-list{
@@ -92,55 +93,47 @@ body{
     margin-left: 93px;   
 }
 
-.header-contact-list{
-    display: flex;
-    gap: 50px;
-    margin-left: auto;   
-}
-.header-item {
-    font-weight: 500;
+.header-link {
+    font-style: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 2%;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
-   
 }
-.header-item:hover,
-.header-item:focus{
-color: var(--accent-color);
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
 }
+
+.header-contact-list{
+    display: flex;
+    gap: 50px;
+    margin-left: auto; 
+}
+.header-contact-link{
+    display: flex;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    fill: var(--primary-text-color); 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 
 .active{
     color: var(--accent-color);
 }
 
-.header-contact-list{
-margin-left: auto;
-}
-
-
-.header-contact{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-   
-   
-}
-.header-contact-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--primary-text-color);
-    fill: var(--primary-text-color);
-    
-}
-.header-contact-item:hover,
-.header-contact-item:focus,
-.header-contact-item:active{
+.header-contact-link:hover,
+.header-contact-link:focus,
+.header-contact-link:active{
 color: var(--accent-color);
 fill: var(--accent-color);
 }
@@ -308,7 +301,7 @@ background-color: #F5F4FA
     width: 270px;
     padding-right: 32px;
     padding-left: 32px;
-    padding-bottom: 30px;
+    margin-top: 16px;
 }
 .team-soc-link{
     width: 44px;
