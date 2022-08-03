@@ -381,6 +381,7 @@ background-color: var(--accent-color);
 }
 .portfolio-item{
     width: calc(100%/3-30px);
+    cursor: pointer;
 }
 .portfolio-item:hover{
 box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
