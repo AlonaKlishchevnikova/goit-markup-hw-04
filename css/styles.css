@@ -94,10 +94,10 @@ body{
 }
 
 .header-link {
-    font-style: 500;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
@@ -121,7 +121,7 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -206,6 +206,7 @@ fill: var(--accent-color);
     width: 270px;
     height: 120px;
     background-color: var(--button-grey-color);
+    border-radius: 4px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
@@ -289,6 +290,7 @@ background-color: #F5F4FA
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 16px;
 }
 .discription{
     padding-top: 30px;
@@ -297,23 +299,20 @@ background-color: #F5F4FA
 
 .team-soc-list{
     display: flex;
-    gap: 10px;
-    width: 270px;
-    padding-right: 32px;
-    padding-left: 32px;
-    margin-top: 16px;
+   /* gap: 10px;*/
+    justify-content: center;
+    align-items: center;
+    margin: -5px; 
 }
 .team-soc-link{
     width: 44px;
     height: 44px;
-    background-color: var(--primary-white-color);
-    border-radius: 50%;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    
+    background-color: var(--primary-white-color);
+    border-radius: 50%; 
+    margin: 5px;
     }
     
 
@@ -384,7 +383,7 @@ background-color: var(--accent-color);
     width: calc(100%/3-30px);
 }
 .portfolio-item:hover{
-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 }
 .portfolio-text{
     font-size: 16px;
@@ -452,7 +451,10 @@ border: 1px solid var(--accent-color);
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    gap: 70px;
+    }
+
+    .footer-soc{
+        margin-left: 70px;
     }
 
 .pre-titel-soc{
@@ -466,7 +468,6 @@ border: 1px solid var(--accent-color);
 .footer-soc-list{
     display: flex;
     gap: 10px;
-    width: 260px;
     margin-top: 20px;
    
 }
@@ -477,10 +478,8 @@ border: 1px solid var(--accent-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
     fill: var(--secondary-text-color);
 }
 .footer-soc-link:hover,
